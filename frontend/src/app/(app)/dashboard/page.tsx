@@ -5,7 +5,8 @@ import { api } from '@/lib/api';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { QuickActions } from '@/components/quick-actions';
 import { formatKZT, formatDate } from '@/lib/utils';
-import { Users, Layers, GraduationCap, TrendingUp, TrendingDown, Wallet, AlertCircle, Trophy, Award } from 'lucide-react';
+import Link from 'next/link';
+import { Users, Layers, GraduationCap, TrendingUp, TrendingDown, Wallet, AlertCircle, Trophy, Award, BellRing } from 'lucide-react';
 import {
   Bar,
   BarChart,
@@ -67,7 +68,7 @@ export default function DashboardPage() {
   if (error) return <p className="text-destructive">{error}</p>;
   if (!data) return <p className="text-muted-foreground">Загрузка...</p>;
 
-  const { kpis, teacherLoad, finance, upcomingLessons, topGroup, topTeacher, revenueByLanguage } = data;
+  const { kpis, teacherLoad, finance, upcomingLessons, topGroup, topTeacher, revenueByLanguage, paymentReminders = [] } = data;
 
   const expenseData = (finance.expensesByCategory || []).map((e: any) => ({
     name: CATEGORY_LABELS[e.category] ?? e.category,
@@ -148,6 +149,38 @@ export default function DashboardPage() {
           </CardContent>
         </Card>
       </div>
+
+      {/* Payment reminders */}
+      <Card>
+        <CardHeader className="flex-row items-center justify-between">
+          <CardTitle className="flex items-center gap-2">
+            <BellRing className="h-5 w-5 text-primary" /> Напоминания об оплате (≤ 7 дней): {kpis.upcomingPayments ?? 0}
+          </CardTitle>
+          <Link href="/notifications" className="text-sm font-medium text-primary hover:underline">
+            Все →
+          </Link>
+        </CardHeader>
+        <CardContent>
+          {paymentReminders.length === 0 ? (
+            <p className="text-sm text-muted-foreground">Нет оплат в ближайшие 7 дней</p>
+          ) : (
+            <ul className="divide-y divide-border">
+              {paymentReminders.map((r: any) => (
+                <li key={r.studentId} className="flex items-center justify-between py-2 text-sm">
+                  <span className="font-medium">{r.fullName}</span>
+                  <span className="flex items-center gap-3 text-muted-foreground">
+                    <span>{formatKZT(r.amount)}</span>
+                    <span>{formatDate(r.nextDue)}</span>
+                    <span className={r.daysLeft < 0 ? 'font-medium text-red-600' : 'text-amber-600'}>
+                      {r.daysLeft < 0 ? `просрочено ${Math.abs(r.daysLeft)} дн.` : r.daysLeft === 0 ? 'сегодня' : `через ${r.daysLeft} дн.`}
+                    </span>
+                  </span>
+                </li>
+              ))}
+            </ul>
+          )}
+        </CardContent>
+      </Card>
 
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
         <Card>

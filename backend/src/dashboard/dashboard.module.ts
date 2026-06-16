@@ -4,9 +4,10 @@ import { DashboardController } from './dashboard.controller';
 import { FinanceModule } from '../finance/finance.module';
 import { TeachersModule } from '../teachers/teachers.module';
 import { GroupsModule } from '../groups/groups.module';
+import { NotificationsModule } from '../notifications/notifications.module';
 
 @Module({
-  imports: [FinanceModule, TeachersModule, GroupsModule],
+  imports: [FinanceModule, TeachersModule, GroupsModule, NotificationsModule],
   controllers: [DashboardController],
   providers: [DashboardService],
 })

@@ -4,6 +4,7 @@ import { PrismaService } from '../prisma/prisma.service';
 import { FinanceService } from '../finance/finance.service';
 import { TeachersService } from '../teachers/teachers.service';
 import { GroupsService } from '../groups/groups.service';
+import { NotificationsService } from '../notifications/notifications.service';
 
 @Injectable()
 export class DashboardService {
@@ -12,6 +13,7 @@ export class DashboardService {
     private finance: FinanceService,
     private teachers: TeachersService,
     private groups: GroupsService,
+    private notifications: NotificationsService,
   ) {}
 
   async overview() {
@@ -42,6 +44,9 @@ export class DashboardService {
     const topTeacher = [...teacherList].sort((a, b) => b.profit - a.profit)[0] ?? null;
     const overdueStudents = new Set(overdueRows.map((p) => p.studentId)).size;
 
+    // напоминания об оплате (следующая оплата в ближайшие 7 дней или просрочена)
+    const paymentReminders = await this.notifications.paymentReminders(7);
+
     return {
       kpis: {
         activeStudents,
@@ -53,7 +58,9 @@ export class DashboardService {
         margin: analytics.margin,
         overduePayments: overdueRows.length,
         overdueStudents,
+        upcomingPayments: paymentReminders.length,
       },
+      paymentReminders: paymentReminders.slice(0, 8),
       topGroup: topGroup ? { id: topGroup.id, name: topGroup.name, netProfit: topGroup.netProfit, margin: topGroup.margin } : null,
       topTeacher: topTeacher ? { id: topTeacher.id, fullName: topTeacher.fullName, profit: topTeacher.profit, salary: topTeacher.salary } : null,
       revenueByLanguage: analytics.revenueByLanguage,

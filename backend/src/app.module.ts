@@ -16,6 +16,8 @@ import { LeadsModule } from './leads/leads.module';
 import { AuditModule } from './audit/audit.module';
 import { ClassroomsModule } from './classrooms/classrooms.module';
 import { MaintenanceModule } from './maintenance/maintenance.module';
+import { ScheduleModule } from './schedule/schedule.module';
+import { NotificationsModule } from './notifications/notifications.module';
 
 import { JwtAuthGuard } from './common/guards/jwt-auth.guard';
 import { AuditInterceptor } from './common/interceptors/audit.interceptor';
@@ -37,6 +39,8 @@ import { AuditInterceptor } from './common/interceptors/audit.interceptor';
     AuditModule,
     ClassroomsModule,
     MaintenanceModule,
+    ScheduleModule,
+    NotificationsModule,
   ],
   providers: [
     // Every route requires a valid JWT unless marked @Public()

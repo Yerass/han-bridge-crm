@@ -13,6 +13,7 @@ import {
   CalendarDays,
   Megaphone,
   ShieldCheck,
+  Bell,
 } from 'lucide-react';
 
 const NAV = [
@@ -23,6 +24,7 @@ const NAV = [
   { href: '/leads', label: 'Воронка продаж', icon: TrendingUp },
   { href: '/finance', label: 'Финансы', icon: Wallet },
   { href: '/schedule', label: 'Расписание', icon: CalendarDays },
+  { href: '/notifications', label: 'Уведомления', icon: Bell },
   { href: '/marketing', label: 'Маркетинг', icon: Megaphone },
   { href: '/audit', label: 'Аудит', icon: ShieldCheck },
 ];
