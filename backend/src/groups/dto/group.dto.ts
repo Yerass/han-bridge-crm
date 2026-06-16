@@ -19,6 +19,7 @@ export class CreateGroupDto {
   @IsOptional() @IsString() classroomId?: string;
   @IsOptional() @IsBoolean() isActive?: boolean;
   @IsOptional() @IsArray() @ValidateNested({ each: true }) @Type(() => ScheduleSlotDto) schedule?: ScheduleSlotDto[];
+  @IsOptional() @IsArray() @IsString({ each: true }) studentIds?: string[];
 }
 
 export class UpdateGroupDto extends CreateGroupDto {

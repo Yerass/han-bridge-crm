@@ -24,11 +24,12 @@ export class GroupsService {
   }
 
   async create(dto: CreateGroupDto) {
-    const { schedule, ...rest } = dto;
+    const { schedule, studentIds, ...rest } = dto;
     return this.prisma.group.create({
       data: {
         ...rest,
         scheduleSlots: schedule ? { create: schedule } : undefined,
+        enrollments: studentIds?.length ? { create: studentIds.map((studentId) => ({ studentId })) } : undefined,
       },
       include: { scheduleSlots: true },
     });
@@ -36,15 +37,34 @@ export class GroupsService {
 
   async update(id: string, dto: UpdateGroupDto) {
     await this.ensure(id);
-    const { schedule, ...rest } = dto;
+    const { schedule, studentIds, ...rest } = dto;
     if (schedule) {
       await this.prisma.scheduleSlot.deleteMany({ where: { groupId: id } });
     }
-    return this.prisma.group.update({
+    const group = await this.prisma.group.update({
       where: { id },
       data: { ...rest, scheduleSlots: schedule ? { create: schedule } : undefined },
       include: { scheduleSlots: true },
     });
+
+    // синхронизация состава группы под переданный список
+    if (studentIds) {
+      const current = await this.prisma.groupStudent.findMany({ where: { groupId: id, isActive: true } });
+      const currentIds = current.map((c) => c.studentId);
+      const toRemove = current.filter((c) => !studentIds.includes(c.studentId));
+      const toAdd = studentIds.filter((sid) => !currentIds.includes(sid));
+      for (const r of toRemove) {
+        await this.prisma.groupStudent.update({ where: { id: r.id }, data: { isActive: false, leftAt: new Date() } });
+      }
+      for (const sid of toAdd) {
+        const existing = await this.prisma.groupStudent.findUnique({
+          where: { groupId_studentId: { groupId: id, studentId: sid } },
+        });
+        if (existing) await this.prisma.groupStudent.update({ where: { id: existing.id }, data: { isActive: true, leftAt: null } });
+        else await this.prisma.groupStudent.create({ data: { groupId: id, studentId: sid } });
+      }
+    }
+    return group;
   }
 
   async remove(id: string) {

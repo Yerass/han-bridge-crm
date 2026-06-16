@@ -2,7 +2,7 @@
 -- PostgreSQL database dump
 --
 
-\restrict qHpfrfAMiCAgMJVWJr9G8fPqIcYue937RKB1JYKhuN8NRyho9bNjXhkgSDwYK5s
+\restrict r8SEWlbEJ8qbVsu2Dr5ftdVB453VTH1A2MhvyjHGGzlndWrqj5SF6tegUiiaLQW
 
 -- Dumped from database version 16.14
 -- Dumped by pg_dump version 16.14
@@ -811,6 +811,7 @@ cmqgpy69j0048em6ht3gl45to	cmqgb32pi0001awwx61vqjxn4	UPDATE	groups	cmqgozbnk000ye
 cmqgpyu7t004aem6hzxfqs953	cmqgb32pi0001awwx61vqjxn4	DELETE	groups	cmqgpy2ns0041em6hqlhvlduq	\N	172.18.0.2	2026-06-16 14:10:25.53
 cmqgpyv8k004fem6hv8pwg36m	cmqgb32pi0001awwx61vqjxn4	UPDATE	groups	cmqgozbnk000yem6hcgorgimk	{"name": "Группа Маржан 1", "level": "hsk 1", "isActive": true, "language": "CHINESE", "schedule": [{"endTime": "20:00", "weekday": 1, "startTime": "19:00"}, {"endTime": "20:00", "weekday": 3, "startTime": "19:00"}, {"endTime": "20:00", "weekday": 5, "startTime": "19:00"}], "studyType": "GROUP", "teacherId": "cmqgorgl1000mem6hn6337lr0", "classroomId": "cmqgetdmx0061qypbvqsm7tzo", "monthlyPrice": 48000}	172.18.0.2	2026-06-16 14:10:26.853
 cmqgqln0g009iem6hzjz914m5	cmqgb32pi0001awwx61vqjxn4	UPDATE	students	cmqgpougu0038em6hhnvtk8yl	{"level": "hsk 1", "phone": "7 705 551 10 28", "status": "ACTIVE", "fullName": "Айнура", "language": "CHINESE", "notesText": "", "startDate": "2026-06-01", "studyType": "INDIVIDUAL_ONLINE"}	172.18.0.2	2026-06-16 14:28:09.28
+cmqgv3j2p000a5t69dcxfs22f	cmqgb32pi0001awwx61vqjxn4	CREATE	students	cmqgv3j2k00085t69zcjcnxe2	{"status": "NEW", "fullName": "????????? 3", "studyType": "GROUP"}	172.18.0.2	2026-06-16 16:34:02.449
 cmqgq1mzk004mem6h7cbbf943	cmqgb32pi0001awwx61vqjxn4	CREATE	groups	cmqgq1mz8004hem6hknzmtu07	{"name": "Группа Маржан 2", "level": "hsk 1", "isActive": true, "language": "CHINESE", "schedule": [{"endTime": "18:30", "weekday": 1, "startTime": "17:30"}, {"endTime": "18:30", "weekday": 3, "startTime": "17:30"}, {"endTime": "18:30", "weekday": 5, "startTime": "17:30"}], "studyType": "GROUP", "teacherId": "cmqgorgl1000mem6hn6337lr0", "classroomId": "cmqgetdmx0061qypbvqsm7tzo", "monthlyPrice": 48000}	172.18.0.2	2026-06-16 14:12:36.129
 cmqgq1t5e004qem6hjgvaqvql	cmqgb32pi0001awwx61vqjxn4	CREATE	groups	cmqgq1t55004oem6hn466g73b	{"studentId": "cmqgpev8k002cem6h0byo0x0r"}	172.18.0.2	2026-06-16 14:12:44.115
 cmqgq22jc004uem6hb02vg4nb	cmqgb32pi0001awwx61vqjxn4	CREATE	groups	cmqgq22j1004sem6h2p5yzzsz	{"studentId": "cmqgpe7e90029em6hhyy8po10"}	172.18.0.2	2026-06-16 14:12:56.28
@@ -851,6 +852,7 @@ cmqgqgevp0094em6htgt54j99	cmqgb32pi0001awwx61vqjxn4	UPDATE	groups	cmqgqf87o008he
 cmqgqgkj90099em6hv7ccnvj6	cmqgb32pi0001awwx61vqjxn4	UPDATE	groups	cmqgqb63h007wem6hmv6jb8pk	{"name": "Зюляль 2", "level": "hsk 1", "isActive": true, "language": "CHINESE", "schedule": [{"endTime": "11:30", "weekday": 1, "startTime": "10:30"}, {"endTime": "11:30", "weekday": 3, "startTime": "10:30"}, {"endTime": "11:30", "weekday": 5, "startTime": "10:30"}], "studyType": "INDIVIDUAL_ONLINE", "teacherId": "cmqgpty3k003jem6hgjc48puz", "classroomId": "cmqgetdn00062qypbz2347c3r", "monthlyPrice": 72000}	172.18.0.2	2026-06-16 14:24:12.789
 cmqgqgpp2009eem6h52euvlnd	cmqgb32pi0001awwx61vqjxn4	UPDATE	groups	cmqgq9wsm007gem6hw29rv7vp	{"name": "Зюляль", "level": "hsk 2", "isActive": true, "language": "CHINESE", "schedule": [{"endTime": "19:00", "weekday": 1, "startTime": "18:00"}, {"endTime": "19:00", "weekday": 3, "startTime": "18:00"}, {"endTime": "18:00", "weekday": 5, "startTime": "17:00"}], "studyType": "INDIVIDUAL", "teacherId": "cmqgpty3k003jem6hgjc48puz", "classroomId": "cmqgetdms0060qypbxf7xcanq", "monthlyPrice": 72000}	172.18.0.2	2026-06-16 14:24:19.479
 cmqgql9ec009gem6h0t9hcmht	cmqgb32pi0001awwx61vqjxn4	UPDATE	students	cmqgppd2u003bem6hn3469snx	{"level": "hsk 1", "phone": "7 708 383 83 83‬", "status": "ACTIVE", "fullName": "Алмаз", "language": "CHINESE", "notesText": "", "startDate": "2026-06-08", "studyType": "INDIVIDUAL"}	172.18.0.2	2026-06-16 14:27:51.636
+cmqgv3j1p00045t699oeyebkz	cmqgb32pi0001awwx61vqjxn4	CREATE	students	cmqgv3j1700025t69bn0m7lqy	{"status": "NEW", "fullName": "????????? 1", "studyType": "GROUP"}	172.18.0.2	2026-06-16 16:34:02.413
 cmqgqmi0i009mem6htc46lx29	cmqgb32pi0001awwx61vqjxn4	UPDATE	students	cmqgpn7f30032em6hkca1jzz6	{"level": "hsk 2", "phone": "7 701 525 02 00", "status": "ACTIVE", "fullName": "Амир", "language": "CHINESE", "notesText": "", "startDate": "2026-05-26", "studyType": "GROUP"}	172.18.0.2	2026-06-16 14:28:49.458
 cmqgqms6e009oem6hlnaqsnrd	cmqgb32pi0001awwx61vqjxn4	UPDATE	students	cmqgpmjvz002zem6h5kz3hfyj	{"level": "hsk 2", "phone": "7 707 144 4263", "status": "ACTIVE", "fullName": "Диас ", "language": "CHINESE", "notesText": "", "startDate": "2026-05-20", "studyType": "GROUP"}	172.18.0.2	2026-06-16 14:29:02.63
 cmqgqn9no009qem6huejhm24t	cmqgb32pi0001awwx61vqjxn4	UPDATE	students	cmqgpljtf002wem6hscrfsf82	{"level": "hsk 2", "phone": "7 776 136 3557", "status": "ACTIVE", "fullName": "Сабрина", "language": "CHINESE", "notesText": "", "startDate": "2026-06-04", "studyType": "GROUP"}	172.18.0.2	2026-06-16 14:29:25.285
@@ -866,6 +868,86 @@ cmqgqqw8000a8em6hfcxuwyqg	cmqgb32pi0001awwx61vqjxn4	UPDATE	students	cmqgp52q0001
 cmqgqr54i00aaem6h5p1d4kod	cmqgb32pi0001awwx61vqjxn4	UPDATE	students	cmqgp3nz3001lem6hwbewmxv1	{"level": "hsk 2", "phone": "+7  702 164 93 33", "status": "ACTIVE", "fullName": "Зауре", "language": "CHINESE", "notesText": "", "startDate": "2026-05-27", "studyType": "GROUP"}	172.18.0.2	2026-06-16 14:32:26.034
 cmqgqut0f00adem6hxlsxn2u7	cmqgb32pi0001awwx61vqjxn4	CREATE	finance	cmqgqut0400abem6hdjnuo2m1	{"type": "EXPENSE", "amount": 120000, "comment": "", "category": "SMM"}	172.18.0.2	2026-06-16 14:35:16.959
 cmqgqvb9a00agem6ht7mal70f	cmqgb32pi0001awwx61vqjxn4	CREATE	finance	cmqgqvb9000aeem6hunjz6xcu	{"type": "EXPENSE", "amount": 160000, "comment": "", "category": "TARGETED_ADS"}	172.18.0.2	2026-06-16 14:35:40.606
+cmqgtav9i0001vc2nhvjsevcn	cmqgb32pi0001awwx61vqjxn4	UPDATE	students	cmqgppd2u003bem6hn3469snx	{"level": "HSK 1", "phone": "7 708 383 83 83‬", "status": "ACTIVE", "fullName": "Алмаз", "language": "CHINESE", "notesText": "", "startDate": "2026-06-08", "studyType": "INDIVIDUAL"}	172.18.0.2	2026-06-16 15:43:45.606
+cmqgtaznm0003vc2ncot0qexi	cmqgb32pi0001awwx61vqjxn4	UPDATE	students	cmqgpougu0038em6hhnvtk8yl	{"level": "HSK 1", "phone": "7 705 551 10 28", "status": "ACTIVE", "fullName": "Айнура", "language": "CHINESE", "notesText": "", "startDate": "2026-06-01", "studyType": "INDIVIDUAL_ONLINE"}	172.18.0.2	2026-06-16 15:43:51.298
+cmqgtb27c0005vc2nyi4p0pit	cmqgb32pi0001awwx61vqjxn4	UPDATE	students	cmqgpo7f70035em6heqj3kquc	{"level": "HSK 2", "phone": "7 777 195 52 61", "status": "ACTIVE", "fullName": "Ляззат", "language": "CHINESE", "notesText": "", "startDate": "2026-06-08", "studyType": "INDIVIDUAL"}	172.18.0.2	2026-06-16 15:43:54.6
+cmqgtb3w80007vc2nkzbtqvfw	cmqgb32pi0001awwx61vqjxn4	UPDATE	students	cmqgpo7f70035em6heqj3kquc	{"level": "HSK 2", "phone": "7 777 195 52 61", "status": "ACTIVE", "fullName": "Ляззат", "language": "CHINESE", "notesText": "", "startDate": "2026-06-08", "studyType": "INDIVIDUAL"}	172.18.0.2	2026-06-16 15:43:56.792
+cmqgtb6tj0009vc2n3xw9pnh8	cmqgb32pi0001awwx61vqjxn4	UPDATE	students	cmqgpn7f30032em6hkca1jzz6	{"level": "HSK 2", "phone": "7 701 525 02 00", "status": "ACTIVE", "fullName": "Амир", "language": "CHINESE", "notesText": "", "startDate": "2026-05-26", "studyType": "GROUP"}	172.18.0.2	2026-06-16 15:44:00.583
+cmqgtb8da000bvc2n9h906iis	cmqgb32pi0001awwx61vqjxn4	UPDATE	students	cmqgpn7f30032em6hkca1jzz6	{"level": "HSK 2", "phone": "7 701 525 02 00", "status": "ACTIVE", "fullName": "Амир", "language": "CHINESE", "notesText": "", "startDate": "2026-05-26", "studyType": "GROUP"}	172.18.0.2	2026-06-16 15:44:02.591
+cmqgtbar8000dvc2nihz7hn20	cmqgb32pi0001awwx61vqjxn4	UPDATE	students	cmqgpmjvz002zem6h5kz3hfyj	{"level": "HSK 2", "phone": "7 707 144 4263", "status": "ACTIVE", "fullName": "Диас ", "language": "CHINESE", "notesText": "", "startDate": "2026-05-20", "studyType": "GROUP"}	172.18.0.2	2026-06-16 15:44:05.684
+cmqgtbe0t000fvc2n9rdqsqyw	cmqgb32pi0001awwx61vqjxn4	UPDATE	students	cmqgpljtf002wem6hscrfsf82	{"level": "HSK 2", "phone": "7 776 136 3557", "status": "ACTIVE", "fullName": "Сабрина", "language": "CHINESE", "notesText": "", "startDate": "2026-06-04", "studyType": "GROUP"}	172.18.0.2	2026-06-16 15:44:09.917
+cmqgtbi5j000hvc2ngo3rt1eq	cmqgb32pi0001awwx61vqjxn4	UPDATE	students	cmqgpljtf002wem6hscrfsf82	{"level": "HSK 2", "phone": "7 776 136 3557", "status": "ACTIVE", "fullName": "Сабрина", "language": "CHINESE", "notesText": "", "startDate": "2026-06-04", "studyType": "GROUP"}	172.18.0.2	2026-06-16 15:44:15.272
+cmqgv3j2800075t69362vtvpd	cmqgb32pi0001awwx61vqjxn4	CREATE	students	cmqgv3j2300055t69qymwpul3	{"status": "NEW", "fullName": "????????? 2", "studyType": "GROUP"}	172.18.0.2	2026-06-16 16:34:02.432
+cmqgtbl46000jvc2nvfftfdf9	cmqgb32pi0001awwx61vqjxn4	UPDATE	students	cmqgpjza2002rem6hw93xdder	{"level": "HSK 1", "phone": "+ 7 701 670 01 03", "status": "FROZEN", "fullName": "Мария", "language": "CHINESE", "notesText": "предоплата 5000", "studyType": "GROUP"}	172.18.0.2	2026-06-16 15:44:19.11
+cmqgtbn0b000lvc2nnvc37y7k	cmqgb32pi0001awwx61vqjxn4	UPDATE	students	cmqgphhqm002oem6h45vaku0z	{"level": "HSK 1", "phone": "7 707 271 5032", "status": "ACTIVE", "fullName": "Ерсултан", "language": "CHINESE", "notesText": "", "startDate": "2026-06-15", "studyType": "GROUP"}	172.18.0.2	2026-06-16 15:44:21.563
+cmqgtbp3z000nvc2n9geziun2	cmqgb32pi0001awwx61vqjxn4	UPDATE	students	cmqgphhqm002oem6h45vaku0z	{"level": "HSK 1", "phone": "7 707 271 5032", "status": "ACTIVE", "fullName": "Ерсултан", "language": "CHINESE", "notesText": "", "startDate": "2026-06-15", "studyType": "GROUP"}	172.18.0.2	2026-06-16 15:44:24.287
+cmqgtbrfz000pvc2nokgo605x	cmqgb32pi0001awwx61vqjxn4	UPDATE	students	cmqgpgx7v002lem6hqolzav57	{"level": "HSK 1", "phone": "7 708 210 8546", "status": "ACTIVE", "fullName": "Ерден", "language": "CHINESE", "notesText": "", "startDate": "2026-06-12", "studyType": "GROUP"}	172.18.0.2	2026-06-16 15:44:27.312
+cmqgtbtsz000rvc2nsi3gfii5	cmqgb32pi0001awwx61vqjxn4	UPDATE	students	cmqgpg4ac002iem6h6vsnr722	{"level": "HSK 1", "phone": "7 707 956 0410‬", "status": "ACTIVE", "fullName": "Хамитула", "language": "CHINESE", "notesText": "", "startDate": "2026-06-12", "studyType": "GROUP"}	172.18.0.2	2026-06-16 15:44:30.371
+cmqgtbxpq000tvc2nrvaerb56	cmqgb32pi0001awwx61vqjxn4	UPDATE	students	cmqgpfi49002fem6hcdm74fr0	{"level": "HSK 1", "phone": "7 747 127 6101", "status": "ACTIVE", "fullName": "Акжан", "language": "CHINESE", "notesText": "", "startDate": "2026-06-03", "studyType": "GROUP"}	172.18.0.2	2026-06-16 15:44:35.438
+cmqgtc0fu000vvc2npcv2ta6f	cmqgb32pi0001awwx61vqjxn4	UPDATE	students	cmqgpe7e90029em6hhyy8po10	{"level": "HSK 1", "phone": "7 778 846 5915", "status": "ACTIVE", "fullName": "Дана", "language": "CHINESE", "notesText": "", "startDate": "2026-06-03", "studyType": "GROUP"}	172.18.0.2	2026-06-16 15:44:38.971
+cmqgtc2u9000xvc2nocf3aas2	cmqgb32pi0001awwx61vqjxn4	UPDATE	students	cmqgpd43r0026em6hfdpt43hs	{"level": "HSK 2", "phone": "7 702 501 5367", "status": "ACTIVE", "fullName": "Арина", "language": "CHINESE", "notesText": "", "startDate": "2026-06-08", "studyType": "GROUP"}	172.18.0.2	2026-06-16 15:44:42.081
+cmqgtc4t6000zvc2n7a9vyuta	cmqgb32pi0001awwx61vqjxn4	UPDATE	students	cmqgpd43r0026em6hfdpt43hs	{"level": "HSK 2", "phone": "7 702 501 5367", "status": "ACTIVE", "fullName": "Арина", "language": "CHINESE", "notesText": "", "startDate": "2026-06-08", "studyType": "GROUP"}	172.18.0.2	2026-06-16 15:44:44.634
+cmqgtcgui0011vc2n9o7douly	cmqgb32pi0001awwx61vqjxn4	UPDATE	students	cmqgpcfu90023em6h71ue8wvv	{"level": "HSK 2", "phone": "7 775 329 0755", "status": "ACTIVE", "fullName": "Диас", "language": "CHINESE", "notesText": "", "startDate": "2026-05-29", "studyType": "GROUP"}	172.18.0.2	2026-06-16 15:45:00.234
+cmqgtcmll0013vc2n80a7sjeh	cmqgb32pi0001awwx61vqjxn4	UPDATE	students	cmqgp9zx20020em6hid49ybd1	{"level": "HSK 2", "phone": "+7 702 386 75 31", "status": "ACTIVE", "fullName": "Айгуль", "language": "CHINESE", "notesText": "", "startDate": "2026-05-25", "studyType": "GROUP"}	172.18.0.2	2026-06-16 15:45:07.689
+cmqgtcowb0015vc2norw9oytv	cmqgb32pi0001awwx61vqjxn4	UPDATE	students	cmqgp8rjl001xem6h667m6wzy	{"level": "HSK 2", "phone": "+7 775 274 50 44", "status": "ACTIVE", "fullName": "Жанайым", "language": "CHINESE", "notesText": "", "startDate": "2026-06-07", "studyType": "GROUP"}	172.18.0.2	2026-06-16 15:45:10.667
+cmqgtcr850017vc2n1ri493wy	cmqgb32pi0001awwx61vqjxn4	UPDATE	students	cmqgp795c001uem6h0vbardj1	{"level": "HSK 2", "phone": "+7 778 932 25 26", "status": "ACTIVE", "fullName": "Азиза", "language": "CHINESE", "notesText": "", "startDate": "2026-05-20", "studyType": "GROUP"}	172.18.0.2	2026-06-16 15:45:13.685
+cmqgtcuv00019vc2n6e3d2cqn	cmqgb32pi0001awwx61vqjxn4	UPDATE	students	cmqgp65st001rem6hfwwxe9xz	{"level": "HSK 2", "phone": "+7 778 854 27 27", "status": "ACTIVE", "fullName": "Молдир", "language": "CHINESE", "notesText": "", "startDate": "2026-05-27", "studyType": "GROUP"}	172.18.0.2	2026-06-16 15:45:18.396
+cmqgtcyiu001bvc2nmvt9s8u2	cmqgb32pi0001awwx61vqjxn4	UPDATE	students	cmqgp52q0001oem6h7yc03xvr	{"level": "HSK 2", "phone": "+7 775 755 08 02", "status": "ACTIVE", "fullName": "Айсана", "language": "CHINESE", "notesText": "", "startDate": "2026-05-27", "studyType": "GROUP"}	172.18.0.2	2026-06-16 15:45:23.142
+cmqgtd1gf001dvc2nktcirid4	cmqgb32pi0001awwx61vqjxn4	UPDATE	students	cmqgp3nz3001lem6hwbewmxv1	{"level": "HSK 2", "phone": "+7  702 164 93 33", "status": "ACTIVE", "fullName": "Зауре", "language": "CHINESE", "notesText": "", "startDate": "2026-05-27", "studyType": "GROUP"}	172.18.0.2	2026-06-16 15:45:26.943
+cmqgtd5ga001fvc2ncchh4pnw	cmqgb32pi0001awwx61vqjxn4	UPDATE	students	cmqgp3nz3001lem6hwbewmxv1	{"level": "HSK 2", "phone": "+7  702 164 93 33", "status": "ACTIVE", "fullName": "Зауре", "language": "CHINESE", "notesText": "", "startDate": "2026-05-27", "studyType": "GROUP"}	172.18.0.2	2026-06-16 15:45:32.122
+cmqgtfjm2001hvc2ns23lnpx1	cmqgb32pi0001awwx61vqjxn4	UPDATE	students	cmqgpcfu90023em6h71ue8wvv	{"level": "HSK 2", "phone": "7 775 329 0755", "status": "ACTIVE", "fullName": "Диас 1", "language": "CHINESE", "notesText": "", "startDate": "2026-05-29", "studyType": "GROUP"}	172.18.0.2	2026-06-16 15:47:23.787
+cmqgtkyxu0001ll863sqab5q5	\N	CREATE	auth	\N	{"email": "director@hanbridge.kz", "password": "password123"}	172.18.0.2	2026-06-16 15:51:36.931
+cmqgtkz1x0004ll868k8d1me3	cmqgb32pi0001awwx61vqjxn4	CREATE	students	cmqgtkz1t0002ll86xh1harso	{"status": "NEW", "fullName": "????????? ????"}	172.18.0.2	2026-06-16 15:51:37.078
+cmqgtkz3s0007ll864s27oara	cmqgb32pi0001awwx61vqjxn4	CREATE	groups	cmqgtkz3k0005ll8694t18nrm	{"name": "???? ?????????", "monthlyPrice": 1000}	172.18.0.2	2026-06-16 15:51:37.144
+cmqgtkz49000bll86ou1213ty	cmqgb32pi0001awwx61vqjxn4	CREATE	groups	cmqgtkz460009ll86242f6nud	{"studentId": "cmqgtkz1t0002ll86xh1harso"}	172.18.0.2	2026-06-16 15:51:37.162
+cmqgtkz4t000dll86q7reo5u1	cmqgb32pi0001awwx61vqjxn4	DELETE	groups	cmqgtkz3k0005ll8694t18nrm	\N	172.18.0.2	2026-06-16 15:51:37.182
+cmqgtkz56000fll86yz2xyseb	cmqgb32pi0001awwx61vqjxn4	DELETE	students	cmqgtkz1t0002ll86xh1harso	\N	172.18.0.2	2026-06-16 15:51:37.194
+cmqgtm3cj000hll86gt9z3fy0	cmqgb32pi0001awwx61vqjxn4	DELETE	finance	cmqgqvb9000aeem6hunjz6xcu	\N	172.18.0.2	2026-06-16 15:52:29.3
+cmqgtm4pk000jll867joarjhi	cmqgb32pi0001awwx61vqjxn4	DELETE	finance	cmqgqut0400abem6hdjnuo2m1	\N	172.18.0.2	2026-06-16 15:52:31.064
+cmqgttazf0004m1q4xejsl6hb	cmqgb32pi0001awwx61vqjxn4	UPDATE	groups	cmqgq66kg005xem6h5hc6j4nb	{"name": "Группа Елнур 1", "level": "HSK 2", "isActive": true, "language": "CHINESE", "schedule": [{"endTime": "19:30", "weekday": 1, "startTime": "18:30"}, {"endTime": "19:30", "weekday": 4, "startTime": "18:30"}, {"endTime": "19:30", "weekday": 5, "startTime": "18:30"}], "studyType": "GROUP", "teacherId": "cmqgpsn2z003gem6hc3zwr8st", "classroomId": "cmqgetdms0060qypbxf7xcanq", "monthlyPrice": 48000}	172.18.0.2	2026-06-16 15:58:05.787
+cmqgttd8h0009m1q4ez2sn02q	cmqgb32pi0001awwx61vqjxn4	UPDATE	groups	cmqgozbnk000yem6hcgorgimk	{"name": "Группа Маржан 1", "level": "HSK 1", "isActive": true, "language": "CHINESE", "schedule": [{"endTime": "20:00", "weekday": 1, "startTime": "19:00"}, {"endTime": "20:00", "weekday": 3, "startTime": "19:00"}, {"endTime": "20:00", "weekday": 5, "startTime": "19:00"}], "studyType": "GROUP", "teacherId": "cmqgorgl1000mem6hn6337lr0", "classroomId": "cmqgetdmx0061qypbvqsm7tzo", "monthlyPrice": 48000}	172.18.0.2	2026-06-16 15:58:08.705
+cmqgttfhh000em1q4ihmaokps	cmqgb32pi0001awwx61vqjxn4	UPDATE	groups	cmqgq1mz8004hem6hknzmtu07	{"name": "Группа Маржан 2", "level": "HSK 1", "isActive": true, "language": "CHINESE", "schedule": [{"endTime": "18:30", "weekday": 1, "startTime": "17:30"}, {"endTime": "18:30", "weekday": 3, "startTime": "17:30"}, {"endTime": "18:30", "weekday": 5, "startTime": "17:30"}], "studyType": "GROUP", "teacherId": "cmqgorgl1000mem6hn6337lr0", "classroomId": "cmqgetdmx0061qypbvqsm7tzo", "monthlyPrice": 48000}	172.18.0.2	2026-06-16 15:58:11.621
+cmqgttib5000jm1q4shirf0wn	cmqgb32pi0001awwx61vqjxn4	UPDATE	groups	cmqgq3hri0055em6hujpkywwl	{"name": "Группа Маржан 3", "level": "hsk 2", "isActive": true, "language": "CHINESE", "schedule": [{"endTime": "17:00", "weekday": 1, "startTime": "16:00"}, {"endTime": "17:00", "weekday": 3, "startTime": "16:00"}, {"endTime": "17:00", "weekday": 5, "startTime": "16:00"}], "studyType": "GROUP", "teacherId": "cmqgorgl1000mem6hn6337lr0", "classroomId": "cmqgetdmx0061qypbvqsm7tzo", "monthlyPrice": 48000}	172.18.0.2	2026-06-16 15:58:15.282
+cmqgttl2v000nm1q4li2sp4ld	cmqgb32pi0001awwx61vqjxn4	UPDATE	groups	cmqgq83hj006pem6hvkt2gcpv	{"name": "Группа Маржан 4", "level": "HSK 2", "isActive": true, "language": "CHINESE", "schedule": [{"endTime": "20:00", "weekday": 2, "startTime": "18:30"}, {"endTime": "20:00", "weekday": 4, "startTime": "18:30"}], "studyType": "GROUP", "teacherId": "cmqgorgl1000mem6hn6337lr0", "classroomId": "cmqgetdmx0061qypbvqsm7tzo", "monthlyPrice": 48000}	172.18.0.2	2026-06-16 15:58:18.871
+cmqgttn31000sm1q459etsv3h	cmqgb32pi0001awwx61vqjxn4	UPDATE	groups	cmqgqf87o008hem6h50obtao1	{"name": "Елнур индив", "level": "HSK 1", "isActive": true, "language": "CHINESE", "schedule": [{"endTime": "20:30", "weekday": 1, "startTime": "19:30"}, {"endTime": "20:30", "weekday": 4, "startTime": "19:30"}, {"endTime": "20:30", "weekday": 5, "startTime": "19:30"}], "studyType": "INDIVIDUAL", "teacherId": "cmqgpsn2z003gem6hc3zwr8st", "classroomId": "cmqgetdms0060qypbxf7xcanq", "monthlyPrice": 72000}	172.18.0.2	2026-06-16 15:58:21.47
+cmqgttpqu000xm1q47h1cby7h	cmqgb32pi0001awwx61vqjxn4	UPDATE	groups	cmqgq9wsm007gem6hw29rv7vp	{"name": "Зюляль", "level": "HSK 2", "isActive": true, "language": "CHINESE", "schedule": [{"endTime": "19:00", "weekday": 1, "startTime": "18:00"}, {"endTime": "19:00", "weekday": 3, "startTime": "18:00"}, {"endTime": "18:00", "weekday": 5, "startTime": "17:00"}], "studyType": "INDIVIDUAL", "teacherId": "cmqgpty3k003jem6hgjc48puz", "classroomId": "cmqgetdms0060qypbxf7xcanq", "monthlyPrice": 72000}	172.18.0.2	2026-06-16 15:58:24.918
+cmqgttrvc0012m1q4rkv33d9x	cmqgb32pi0001awwx61vqjxn4	UPDATE	groups	cmqgqb63h007wem6hmv6jb8pk	{"name": "Зюляль 2", "level": "HSK 1", "isActive": true, "language": "CHINESE", "schedule": [{"endTime": "11:30", "weekday": 1, "startTime": "10:30"}, {"endTime": "11:30", "weekday": 3, "startTime": "10:30"}, {"endTime": "11:30", "weekday": 5, "startTime": "10:30"}], "studyType": "INDIVIDUAL_ONLINE", "teacherId": "cmqgpty3k003jem6hgjc48puz", "classroomId": "cmqgetdn00062qypbz2347c3r", "monthlyPrice": 72000}	172.18.0.2	2026-06-16 15:58:27.672
+cmqgtu2pd0014m1q46g9slkd1	cmqgb32pi0001awwx61vqjxn4	UPDATE	students	cmqgppd2u003bem6hn3469snx	{"level": "HSK 1", "phone": "7 708 383 83 83‬", "status": "ACTIVE", "fullName": "Алмаз", "language": "CHINESE", "notesText": "", "startDate": "2026-06-08", "studyType": "INDIVIDUAL"}	172.18.0.2	2026-06-16 15:58:41.713
+cmqguoh0i00015bzol5zzrypp	\N	CREATE	auth	\N	{"email": "director@hanbridge.kz", "password": "password123"}	172.18.0.2	2026-06-16 16:22:19.938
+cmqguoh3q000b5bzovmvteqg3	cmqgb32pi0001awwx61vqjxn4	CREATE	groups	cmqguoh3j00025bzow5e1pzjz	{"name": "???? ?????", "schedule": [{"endTime": "00:02", "weekday": 1, "startTime": "00:01"}, {"endTime": "00:02", "weekday": 2, "startTime": "00:01"}, {"endTime": "00:02", "weekday": 3, "startTime": "00:01"}, {"endTime": "00:02", "weekday": 4, "startTime": "00:01"}, {"endTime": "00:02", "weekday": 5, "startTime": "00:01"}, {"endTime": "00:02", "weekday": 6, "startTime": "00:01"}, {"endTime": "00:02", "weekday": 7, "startTime": "00:01"}], "monthlyPrice": 48000}	172.18.0.2	2026-06-16 16:22:20.055
+cmqguoh44000e5bzo71uekphs	cmqgb32pi0001awwx61vqjxn4	CREATE	students	cmqguoh40000c5bzo87tophiw	{"status": "ACTIVE", "fullName": "????? ????", "startDate": "2026-06-06"}	172.18.0.2	2026-06-16 16:22:20.069
+cmqguoh4e000h5bzo6ppcpa9u	cmqgb32pi0001awwx61vqjxn4	CREATE	students	cmqguoh4a000f5bzos0h81wmp	{"status": "ACTIVE", "fullName": "????? ????", "startDate": "2026-06-05"}	172.18.0.2	2026-06-16 16:22:20.078
+cmqguoh4t000l5bzokfnm1ccs	cmqgb32pi0001awwx61vqjxn4	CREATE	groups	cmqguoh4q000j5bzosp2me6ze	{"studentId": "cmqguoh40000c5bzo87tophiw"}	172.18.0.2	2026-06-16 16:22:20.093
+cmqguoh55000p5bzo7lqtde42	cmqgb32pi0001awwx61vqjxn4	CREATE	groups	cmqguoh52000n5bzos680hg0k	{"studentId": "cmqguoh4a000f5bzos0h81wmp"}	172.18.0.2	2026-06-16 16:22:20.106
+cmqguoh6y000r5bzoa8499mq5	cmqgb32pi0001awwx61vqjxn4	DELETE	groups	cmqguoh3j00025bzow5e1pzjz	\N	172.18.0.2	2026-06-16 16:22:20.171
+cmqguoh7b000t5bzortmx3wcv	cmqgb32pi0001awwx61vqjxn4	DELETE	students	cmqguoh40000c5bzo87tophiw	\N	172.18.0.2	2026-06-16 16:22:20.183
+cmqguoh7k000v5bzowxxrn4kr	cmqgb32pi0001awwx61vqjxn4	DELETE	students	cmqguoh4a000f5bzos0h81wmp	\N	172.18.0.2	2026-06-16 16:22:20.192
+cmqguq7gg000x5bzohb7xklov	cmqgb32pi0001awwx61vqjxn4	UPDATE	students	cmqgppd2u003bem6hn3469snx	{"level": "HSK 1", "phone": "7 708 383 83 83‬", "status": "ACTIVE", "fullName": "Алмаз", "language": "CHINESE", "notesText": "", "startDate": "2026-06-08", "studyType": "INDIVIDUAL"}	172.18.0.2	2026-06-16 16:23:40.865
+cmqgureho00105bzoaerz84h6	cmqgb32pi0001awwx61vqjxn4	CREATE	students	cmqgurehf000y5bzo0q3mfczw	{"level": "HSK 1", "phone": "", "status": "NEW", "fullName": "Тест", "language": "CHINESE", "notesText": "", "startDate": "2026-05-20", "studyType": "GROUP"}	172.18.0.2	2026-06-16 16:24:36.636
+cmqgurtkj00135bzowakmapwp	cmqgb32pi0001awwx61vqjxn4	CREATE	teachers	cmqgurtk800115bzoq5scjgq0	{"phone": "", "fullName": "Тест", "languages": ["CHINESE"], "hourlyRate": 5000, "paymentType": "PER_HOUR", "specialization": ""}	172.18.0.2	2026-06-16 16:24:56.18
+cmqgv3iyg00015t6912pbqbup	\N	CREATE	auth	\N	{"email": "director@hanbridge.kz", "password": "password123"}	172.18.0.2	2026-06-16 16:34:02.297
+cmqgv3j62000i5t693s97us8q	cmqgb32pi0001awwx61vqjxn4	CREATE	groups	cmqgv3j5s000b5t69whabsg9c	{"name": "?????? ????? ????????", "schedule": [{"endTime": "18:00", "weekday": 1, "startTime": "17:00"}], "studyType": "GROUP", "studentIds": ["cmqgv3j1700025t69bn0m7lqy", "cmqgv3j2300055t69qymwpul3", "cmqgv3j2k00085t69zcjcnxe2"], "monthlyPrice": 48000}	172.18.0.2	2026-06-16 16:34:02.571
+cmqgv3j7o000k5t692dq518z9	cmqgb32pi0001awwx61vqjxn4	DELETE	groups	cmqgv3j5s000b5t69whabsg9c	\N	172.18.0.2	2026-06-16 16:34:02.628
+cmqgv3j8j000m5t69i4yclhjh	cmqgb32pi0001awwx61vqjxn4	DELETE	students	cmqgv3j1700025t69bn0m7lqy	\N	172.18.0.2	2026-06-16 16:34:02.659
+cmqgv3j8t000o5t69yi7lmk53	cmqgb32pi0001awwx61vqjxn4	DELETE	students	cmqgv3j2300055t69qymwpul3	\N	172.18.0.2	2026-06-16 16:34:02.669
+cmqgv3j91000q5t69f9n59whj	cmqgb32pi0001awwx61vqjxn4	DELETE	students	cmqgv3j2k00085t69zcjcnxe2	\N	172.18.0.2	2026-06-16 16:34:02.678
+cmqgv7db3000x5t69n5wc9i8d	cmqgb32pi0001awwx61vqjxn4	CREATE	groups	cmqgv7dae000s5t69f45qwwso	{"name": "Тест", "isActive": true, "language": "CHINESE", "schedule": [{"endTime": "18:00", "weekday": 1, "startTime": "17:00"}, {"endTime": "18:00", "weekday": 3, "startTime": "17:00"}, {"endTime": "18:00", "weekday": 5, "startTime": "17:00"}], "studyType": "GROUP", "teacherId": "cmqgurtk800115bzoq5scjgq0", "studentIds": [], "classroomId": "cmqgetdms0060qypbxf7xcanq", "monthlyPrice": 96000}	172.18.0.2	2026-06-16 16:37:01.599
+cmqgv7kd000145t69z5c798b9	cmqgb32pi0001awwx61vqjxn4	UPDATE	groups	cmqgv7dae000s5t69f45qwwso	{"name": "Тест", "isActive": true, "language": "CHINESE", "schedule": [{"endTime": "18:00", "weekday": 1, "startTime": "17:00"}, {"endTime": "18:00", "weekday": 3, "startTime": "17:00"}, {"endTime": "18:00", "weekday": 5, "startTime": "17:00"}], "studyType": "GROUP", "teacherId": "cmqgurtk800115bzoq5scjgq0", "studentIds": ["cmqgurehf000y5bzo0q3mfczw"], "classroomId": "cmqgetdms0060qypbxf7xcanq", "monthlyPrice": 96000}	172.18.0.2	2026-06-16 16:37:10.741
+cmqgv81qi00165t699ided0t8	cmqgb32pi0001awwx61vqjxn4	DELETE	students	cmqgurehf000y5bzo0q3mfczw	\N	172.18.0.2	2026-06-16 16:37:33.258
+cmqgv84vo00185t696sxjqbzh	cmqgb32pi0001awwx61vqjxn4	DELETE	groups	cmqgv7dae000s5t69f45qwwso	\N	172.18.0.2	2026-06-16 16:37:37.332
+cmqgvb6p2001b5t69dryeqyi3	cmqgb32pi0001awwx61vqjxn4	CREATE	students	cmqgvb6ox00195t69hwyfr2aj	{"level": "", "phone": "", "status": "ACTIVE", "fullName": "тест", "language": "CHINESE", "notesText": "", "startDate": "2026-05-21", "studyType": "INDIVIDUAL"}	172.18.0.2	2026-06-16 16:39:59.654
+cmqgvbee1001i5t690ewe36hq	cmqgb32pi0001awwx61vqjxn4	UPDATE	groups	cmqgqf87o008hem6h50obtao1	{"name": "Елнур индив", "level": "HSK 1", "isActive": true, "language": "CHINESE", "schedule": [{"endTime": "20:30", "weekday": 1, "startTime": "19:30"}, {"endTime": "20:30", "weekday": 4, "startTime": "19:30"}, {"endTime": "20:30", "weekday": 5, "startTime": "19:30"}], "studyType": "INDIVIDUAL", "teacherId": "cmqgpsn2z003gem6hc3zwr8st", "studentIds": ["cmqgppd2u003bem6hn3469snx", "cmqgvb6ox00195t69hwyfr2aj"], "classroomId": "cmqgetdms0060qypbxf7xcanq", "monthlyPrice": 72000}	172.18.0.2	2026-06-16 16:40:09.626
+cmqgvd5ze001n5t695032dxqv	cmqgb32pi0001awwx61vqjxn4	UPDATE	groups	cmqgqf87o008hem6h50obtao1	{"name": "Елнур индив", "level": "HSK 1", "isActive": true, "language": "CHINESE", "schedule": [{"endTime": "20:30", "weekday": 1, "startTime": "19:30"}, {"endTime": "20:30", "weekday": 4, "startTime": "19:30"}, {"endTime": "20:30", "weekday": 5, "startTime": "19:30"}], "studyType": "INDIVIDUAL", "teacherId": "cmqgpsn2z003gem6hc3zwr8st", "studentIds": ["cmqgppd2u003bem6hn3469snx"], "classroomId": "cmqgetdms0060qypbxf7xcanq", "monthlyPrice": 72000}	172.18.0.2	2026-06-16 16:41:32.043
+cmqgvdabp001p5t6953krx3ze	cmqgb32pi0001awwx61vqjxn4	DELETE	teachers	cmqgurtk800115bzoq5scjgq0	\N	172.18.0.2	2026-06-16 16:41:37.669
+cmqgvdcrb001r5t69gaqdw0tg	cmqgb32pi0001awwx61vqjxn4	DELETE	students	cmqgvb6ox00195t69hwyfr2aj	\N	172.18.0.2	2026-06-16 16:41:40.823
+cmqgvfv9r001u5t69yk17t150	cmqgb32pi0001awwx61vqjxn4	CREATE	finance	cmqgvfv9e001s5t69xx7ufyhp	{"date": "2026-06-01", "type": "EXPENSE", "amount": 160000, "category": "TARGETED_ADS"}	172.18.0.2	2026-06-16 16:43:38.127
+cmqgvg18p001w5t69d8tpjgzz	cmqgb32pi0001awwx61vqjxn4	UPDATE	finance	cmqgvfv9e001s5t69xx7ufyhp	{"date": "2026-05-25", "type": "EXPENSE", "amount": 160000, "category": "TARGETED_ADS"}	172.18.0.2	2026-06-16 16:43:45.865
+cmqgvgcqm001y5t694rj3mgu9	cmqgb32pi0001awwx61vqjxn4	DELETE	finance	cmqgvfv9e001s5t69xx7ufyhp	\N	172.18.0.2	2026-06-16 16:44:00.766
+cmqgvgnvp00215t694fkodqrm	cmqgb32pi0001awwx61vqjxn4	CREATE	finance	cmqgvgnve001z5t69n0p7twap	{"date": "2026-07-01", "type": "EXPENSE", "amount": 100, "category": "RENT"}	172.18.0.2	2026-06-16 16:44:15.205
+cmqgvguq200235t69c6rgnqlt	cmqgb32pi0001awwx61vqjxn4	DELETE	finance	cmqgvgnve001z5t69n0p7twap	\N	172.18.0.2	2026-06-16 16:44:24.074
+cmqgvh4vx00265t690bv1jl0i	cmqgb32pi0001awwx61vqjxn4	CREATE	finance	cmqgvh4vm00245t69ohirxcqy	{"date": "2026-06-01", "type": "EXPENSE", "amount": 160000, "category": "TARGETED_ADS"}	172.18.0.2	2026-06-16 16:44:37.246
+cmqgvhlja00295t691qzc757v	cmqgb32pi0001awwx61vqjxn4	CREATE	finance	cmqgvhliy00275t695sufbv5v	{"date": "2026-06-01", "type": "EXPENSE", "amount": 120000, "category": "SMM"}	172.18.0.2	2026-06-16 16:44:58.823
+cmqgvibua002e5t6960b0we25	cmqgb32pi0001awwx61vqjxn4	UPDATE	groups	cmqgq66kg005xem6h5hc6j4nb	{"name": "Группа Елнур 1", "level": "HSK 2", "isActive": true, "language": "CHINESE", "schedule": [{"endTime": "19:30", "weekday": 1, "startTime": "18:30"}, {"endTime": "19:30", "weekday": 4, "startTime": "18:30"}, {"endTime": "19:30", "weekday": 5, "startTime": "18:30"}], "studyType": "GROUP", "teacherId": "cmqgpsn2z003gem6hc3zwr8st", "studentIds": ["cmqgp8rjl001xem6h667m6wzy", "cmqgp9zx20020em6hid49ybd1", "cmqgpcfu90023em6h71ue8wvv", "cmqgpd43r0026em6hfdpt43hs", "cmqgpljtf002wem6hscrfsf82"], "classroomId": "cmqgetdms0060qypbxf7xcanq", "monthlyPrice": 48000}	172.18.0.2	2026-06-16 16:45:32.914
 \.
 
 
@@ -893,14 +975,14 @@ COPY public."Document" (id, name, url, "mimeType", "studentId", "uploadedById", 
 --
 
 COPY public."Group" (id, name, language, level, "studyType", "monthlyPrice", "isActive", "teacherId", "classroomId", "createdAt", "updatedAt") FROM stdin;
-cmqgozbnk000yem6hcgorgimk	Группа Маржан 1	CHINESE	hsk 1	GROUP	48000.00	t	cmqgorgl1000mem6hn6337lr0	cmqgetdmx0061qypbvqsm7tzo	2026-06-16 13:42:48.513	2026-06-16 14:10:26.843
-cmqgq1mz8004hem6hknzmtu07	Группа Маржан 2	CHINESE	hsk 1	GROUP	48000.00	t	cmqgorgl1000mem6hn6337lr0	cmqgetdmx0061qypbvqsm7tzo	2026-06-16 14:12:36.116	2026-06-16 14:13:10.015
-cmqgq3hri0055em6hujpkywwl	Группа Маржан 3	CHINESE	hsk 2	GROUP	48000.00	t	cmqgorgl1000mem6hn6337lr0	cmqgetdmx0061qypbvqsm7tzo	2026-06-16 14:14:02.671	2026-06-16 14:14:31.164
-cmqgq83hj006pem6hvkt2gcpv	Группа Маржан 4	CHINESE	hsk 2	GROUP	48000.00	t	cmqgorgl1000mem6hn6337lr0	cmqgetdmx0061qypbvqsm7tzo	2026-06-16 14:17:37.447	2026-06-16 14:17:52.236
-cmqgq66kg005xem6h5hc6j4nb	Группа Елнур 1	CHINESE	hsk 2	GROUP	48000.00	t	cmqgpsn2z003gem6hc3zwr8st	cmqgetdms0060qypbxf7xcanq	2026-06-16 14:16:08.129	2026-06-16 14:18:10.698
-cmqgqf87o008hem6h50obtao1	Елнур индив	CHINESE	hsk 1	INDIVIDUAL	72000.00	t	cmqgpsn2z003gem6hc3zwr8st	cmqgetdms0060qypbxf7xcanq	2026-06-16 14:23:10.165	2026-06-16 14:24:05.45
-cmqgqb63h007wem6hmv6jb8pk	Зюляль 2	CHINESE	hsk 1	INDIVIDUAL_ONLINE	72000.00	t	cmqgpty3k003jem6hgjc48puz	cmqgetdn00062qypbz2347c3r	2026-06-16 14:20:00.797	2026-06-16 14:24:12.782
-cmqgq9wsm007gem6hw29rv7vp	Зюляль	CHINESE	hsk 2	INDIVIDUAL	72000.00	t	cmqgpty3k003jem6hgjc48puz	cmqgetdms0060qypbxf7xcanq	2026-06-16 14:19:02.086	2026-06-16 14:24:19.472
+cmqgozbnk000yem6hcgorgimk	Группа Маржан 1	CHINESE	HSK 1	GROUP	48000.00	t	cmqgorgl1000mem6hn6337lr0	cmqgetdmx0061qypbvqsm7tzo	2026-06-16 13:42:48.513	2026-06-16 15:58:08.698
+cmqgq1mz8004hem6hknzmtu07	Группа Маржан 2	CHINESE	HSK 1	GROUP	48000.00	t	cmqgorgl1000mem6hn6337lr0	cmqgetdmx0061qypbvqsm7tzo	2026-06-16 14:12:36.116	2026-06-16 15:58:11.605
+cmqgq3hri0055em6hujpkywwl	Группа Маржан 3	CHINESE	hsk 2	GROUP	48000.00	t	cmqgorgl1000mem6hn6337lr0	cmqgetdmx0061qypbvqsm7tzo	2026-06-16 14:14:02.671	2026-06-16 15:58:15.274
+cmqgq83hj006pem6hvkt2gcpv	Группа Маржан 4	CHINESE	HSK 2	GROUP	48000.00	t	cmqgorgl1000mem6hn6337lr0	cmqgetdmx0061qypbvqsm7tzo	2026-06-16 14:17:37.447	2026-06-16 15:58:18.863
+cmqgq9wsm007gem6hw29rv7vp	Зюляль	CHINESE	HSK 2	INDIVIDUAL	72000.00	t	cmqgpty3k003jem6hgjc48puz	cmqgetdms0060qypbxf7xcanq	2026-06-16 14:19:02.086	2026-06-16 15:58:24.909
+cmqgqb63h007wem6hmv6jb8pk	Зюляль 2	CHINESE	HSK 1	INDIVIDUAL_ONLINE	72000.00	t	cmqgpty3k003jem6hgjc48puz	cmqgetdn00062qypbz2347c3r	2026-06-16 14:20:00.797	2026-06-16 15:58:27.658
+cmqgqf87o008hem6h50obtao1	Елнур индив	CHINESE	HSK 1	INDIVIDUAL	72000.00	t	cmqgpsn2z003gem6hc3zwr8st	cmqgetdms0060qypbxf7xcanq	2026-06-16 14:23:10.165	2026-06-16 16:41:32.034
+cmqgq66kg005xem6h5hc6j4nb	Группа Елнур 1	CHINESE	HSK 2	GROUP	48000.00	t	cmqgpsn2z003gem6hc3zwr8st	cmqgetdms0060qypbxf7xcanq	2026-06-16 14:16:08.129	2026-06-16 16:45:32.904
 \.
 
 
@@ -1005,29 +1087,29 @@ COPY public."Payroll" (id, "teacherId", "periodMonth", "periodYear", "hoursWorke
 --
 
 COPY public."ScheduleSlot" (id, "groupId", weekday, "startTime", "endTime", "classroomId", "createdAt", "updatedAt") FROM stdin;
-cmqgpyv8b004bem6ho434jn0a	cmqgozbnk000yem6hcgorgimk	1	19:00	20:00	\N	2026-06-16 14:10:26.843	2026-06-16 14:10:26.843
-cmqgpyv8b004cem6hdwq2sxrt	cmqgozbnk000yem6hcgorgimk	3	19:00	20:00	\N	2026-06-16 14:10:26.843	2026-06-16 14:10:26.843
-cmqgpyv8b004dem6h8s06k7i8	cmqgozbnk000yem6hcgorgimk	5	19:00	20:00	\N	2026-06-16 14:10:26.843	2026-06-16 14:10:26.843
-cmqgq2d4v004zem6h474744x0	cmqgq1mz8004hem6hknzmtu07	1	17:30	18:30	\N	2026-06-16 14:13:10.015	2026-06-16 14:13:10.015
-cmqgq2d4v0050em6hz7m0ijcy	cmqgq1mz8004hem6hknzmtu07	3	17:30	18:30	\N	2026-06-16 14:13:10.015	2026-06-16 14:13:10.015
-cmqgq2d4v0051em6hp1q5k5hn	cmqgq1mz8004hem6hknzmtu07	5	17:30	18:30	\N	2026-06-16 14:13:10.015	2026-06-16 14:13:10.015
-cmqgq43r0005rem6hyquu8qdx	cmqgq3hri0055em6hujpkywwl	1	16:00	17:00	\N	2026-06-16 14:14:31.164	2026-06-16 14:14:31.164
-cmqgq43r0005sem6hhy2zslrm	cmqgq3hri0055em6hujpkywwl	3	16:00	17:00	\N	2026-06-16 14:14:31.164	2026-06-16 14:14:31.164
-cmqgq43r0005tem6hrlbqw4uy	cmqgq3hri0055em6hujpkywwl	5	16:00	17:00	\N	2026-06-16 14:14:31.164	2026-06-16 14:14:31.164
-cmqgq8ewb0072em6h836i4bru	cmqgq83hj006pem6hvkt2gcpv	2	18:30	20:00	\N	2026-06-16 14:17:52.236	2026-06-16 14:17:52.236
-cmqgq8ewb0073em6hpy9206bp	cmqgq83hj006pem6hvkt2gcpv	4	18:30	20:00	\N	2026-06-16 14:17:52.236	2026-06-16 14:17:52.236
-cmqgq8t56007aem6ho9jo03tb	cmqgq66kg005xem6h5hc6j4nb	1	18:30	19:30	\N	2026-06-16 14:18:10.698	2026-06-16 14:18:10.698
-cmqgq8t56007bem6hzcye9tfa	cmqgq66kg005xem6h5hc6j4nb	4	18:30	19:30	\N	2026-06-16 14:18:10.698	2026-06-16 14:18:10.698
-cmqgq8t56007cem6h390urjpk	cmqgq66kg005xem6h5hc6j4nb	5	18:30	19:30	\N	2026-06-16 14:18:10.698	2026-06-16 14:18:10.698
-cmqgqgeve0090em6hn6unc1p7	cmqgqf87o008hem6h50obtao1	1	19:30	20:30	\N	2026-06-16 14:24:05.45	2026-06-16 14:24:05.45
-cmqgqgeve0091em6hzk67b0h0	cmqgqf87o008hem6h50obtao1	4	19:30	20:30	\N	2026-06-16 14:24:05.45	2026-06-16 14:24:05.45
-cmqgqgeve0092em6h4a79h0jh	cmqgqf87o008hem6h50obtao1	5	19:30	20:30	\N	2026-06-16 14:24:05.45	2026-06-16 14:24:05.45
-cmqgqgkj20095em6hikctsa11	cmqgqb63h007wem6hmv6jb8pk	1	10:30	11:30	\N	2026-06-16 14:24:12.782	2026-06-16 14:24:12.782
-cmqgqgkj20096em6hv8cr0pld	cmqgqb63h007wem6hmv6jb8pk	3	10:30	11:30	\N	2026-06-16 14:24:12.782	2026-06-16 14:24:12.782
-cmqgqgkj20097em6hve3ym7o7	cmqgqb63h007wem6hmv6jb8pk	5	10:30	11:30	\N	2026-06-16 14:24:12.782	2026-06-16 14:24:12.782
-cmqgqgpow009aem6h3l3eyg5b	cmqgq9wsm007gem6hw29rv7vp	1	18:00	19:00	\N	2026-06-16 14:24:19.472	2026-06-16 14:24:19.472
-cmqgqgpow009bem6hn2g5ljc3	cmqgq9wsm007gem6hw29rv7vp	3	18:00	19:00	\N	2026-06-16 14:24:19.472	2026-06-16 14:24:19.472
-cmqgqgpow009cem6h07b4ad65	cmqgq9wsm007gem6hw29rv7vp	5	17:00	18:00	\N	2026-06-16 14:24:19.472	2026-06-16 14:24:19.472
+cmqgvd5z5001j5t698xwdxjuo	cmqgqf87o008hem6h50obtao1	1	19:30	20:30	\N	2026-06-16 16:41:32.034	2026-06-16 16:41:32.034
+cmqgvd5z5001k5t69xl0f5zm4	cmqgqf87o008hem6h50obtao1	4	19:30	20:30	\N	2026-06-16 16:41:32.034	2026-06-16 16:41:32.034
+cmqgvd5z5001l5t69u27q1h0w	cmqgqf87o008hem6h50obtao1	5	19:30	20:30	\N	2026-06-16 16:41:32.034	2026-06-16 16:41:32.034
+cmqgvibu0002a5t6980e2gzml	cmqgq66kg005xem6h5hc6j4nb	1	18:30	19:30	\N	2026-06-16 16:45:32.904	2026-06-16 16:45:32.904
+cmqgvibu0002b5t698amlvwgs	cmqgq66kg005xem6h5hc6j4nb	4	18:30	19:30	\N	2026-06-16 16:45:32.904	2026-06-16 16:45:32.904
+cmqgvibu0002c5t69z09m02m9	cmqgq66kg005xem6h5hc6j4nb	5	18:30	19:30	\N	2026-06-16 16:45:32.904	2026-06-16 16:45:32.904
+cmqgttd890005m1q4ui3w1fad	cmqgozbnk000yem6hcgorgimk	1	19:00	20:00	\N	2026-06-16 15:58:08.698	2026-06-16 15:58:08.698
+cmqgttd890006m1q4m8hlaocw	cmqgozbnk000yem6hcgorgimk	3	19:00	20:00	\N	2026-06-16 15:58:08.698	2026-06-16 15:58:08.698
+cmqgttd890007m1q4dn0p80g5	cmqgozbnk000yem6hcgorgimk	5	19:00	20:00	\N	2026-06-16 15:58:08.698	2026-06-16 15:58:08.698
+cmqgttfh1000am1q4n64zhseq	cmqgq1mz8004hem6hknzmtu07	1	17:30	18:30	\N	2026-06-16 15:58:11.605	2026-06-16 15:58:11.605
+cmqgttfh1000bm1q4zg8xh9sp	cmqgq1mz8004hem6hknzmtu07	3	17:30	18:30	\N	2026-06-16 15:58:11.605	2026-06-16 15:58:11.605
+cmqgttfh1000cm1q4f87sjpj8	cmqgq1mz8004hem6hknzmtu07	5	17:30	18:30	\N	2026-06-16 15:58:11.605	2026-06-16 15:58:11.605
+cmqgttiay000fm1q44e8wap82	cmqgq3hri0055em6hujpkywwl	1	16:00	17:00	\N	2026-06-16 15:58:15.274	2026-06-16 15:58:15.274
+cmqgttiay000gm1q4kv1us8o8	cmqgq3hri0055em6hujpkywwl	3	16:00	17:00	\N	2026-06-16 15:58:15.274	2026-06-16 15:58:15.274
+cmqgttiay000hm1q4gfbf0bvg	cmqgq3hri0055em6hujpkywwl	5	16:00	17:00	\N	2026-06-16 15:58:15.274	2026-06-16 15:58:15.274
+cmqgttl2n000km1q4e5a9xee9	cmqgq83hj006pem6hvkt2gcpv	2	18:30	20:00	\N	2026-06-16 15:58:18.863	2026-06-16 15:58:18.863
+cmqgttl2n000lm1q4wtr6yemf	cmqgq83hj006pem6hvkt2gcpv	4	18:30	20:00	\N	2026-06-16 15:58:18.863	2026-06-16 15:58:18.863
+cmqgttpql000tm1q48pn3q8qu	cmqgq9wsm007gem6hw29rv7vp	1	18:00	19:00	\N	2026-06-16 15:58:24.909	2026-06-16 15:58:24.909
+cmqgttpql000um1q4c8c5523y	cmqgq9wsm007gem6hw29rv7vp	3	18:00	19:00	\N	2026-06-16 15:58:24.909	2026-06-16 15:58:24.909
+cmqgttpql000vm1q43x5fwei8	cmqgq9wsm007gem6hw29rv7vp	5	17:00	18:00	\N	2026-06-16 15:58:24.909	2026-06-16 15:58:24.909
+cmqgttruy000ym1q4ussgfucn	cmqgqb63h007wem6hmv6jb8pk	1	10:30	11:30	\N	2026-06-16 15:58:27.658	2026-06-16 15:58:27.658
+cmqgttruy000zm1q450s78dau	cmqgqb63h007wem6hmv6jb8pk	3	10:30	11:30	\N	2026-06-16 15:58:27.658	2026-06-16 15:58:27.658
+cmqgttruy0010m1q4d4fi7clm	cmqgqb63h007wem6hmv6jb8pk	5	10:30	11:30	\N	2026-06-16 15:58:27.658	2026-06-16 15:58:27.658
 \.
 
 
@@ -1036,27 +1118,27 @@ cmqgqgpow009cem6h07b4ad65	cmqgq9wsm007gem6hw29rv7vp	5	17:00	18:00	\N	2026-06-16 
 --
 
 COPY public."Student" (id, "fullName", phone, email, "birthDate", language, level, "studyType", status, "averageGrade", "startDate", "notesText", "userId", "parentId", "createdById", "createdAt", "updatedAt") FROM stdin;
-cmqgpe7e90029em6hhyy8po10	Дана	7 778 846 5915	\N	\N	CHINESE	hsk 1	GROUP	ACTIVE	\N	2026-06-03 00:00:00		\N	\N	\N	2026-06-16 13:54:22.833	2026-06-16 13:54:22.833
 cmqgpev8k002cem6h0byo0x0r	Акмоншак	7 701 434 1434	\N	\N	CHINESE	hsk 1	GROUP	ACTIVE	\N	2026-06-03 00:00:00		\N	\N	\N	2026-06-16 13:54:53.732	2026-06-16 13:54:53.732
-cmqgpfi49002fem6hcdm74fr0	Акжан	7 747 127 6101	\N	\N	CHINESE	hsk 1	GROUP	ACTIVE	\N	2026-06-03 00:00:00		\N	\N	\N	2026-06-16 13:55:23.385	2026-06-16 13:55:23.385
-cmqgpg4ac002iem6h6vsnr722	Хамитула	7 707 956 0410‬	\N	\N	CHINESE	Hsk 1	GROUP	ACTIVE	\N	2026-06-12 00:00:00		\N	\N	\N	2026-06-16 13:55:52.116	2026-06-16 13:55:52.116
-cmqgpjza2002rem6hw93xdder	Мария	+ 7 701 670 01 03	\N	\N	CHINESE	hsk 1	GROUP	FROZEN	\N	\N	предоплата 5000	\N	\N	\N	2026-06-16 13:58:52.25	2026-06-16 13:59:19.827
-cmqgppd2u003bem6hn3469snx	Алмаз	7 708 383 83 83‬	\N	\N	CHINESE	hsk 1	INDIVIDUAL	ACTIVE	\N	2026-06-08 00:00:00		\N	\N	\N	2026-06-16 14:03:03.415	2026-06-16 14:27:51.626
-cmqgpougu0038em6hhnvtk8yl	Айнура	7 705 551 10 28	\N	\N	CHINESE	hsk 1	INDIVIDUAL_ONLINE	ACTIVE	\N	2026-06-01 00:00:00		\N	\N	\N	2026-06-16 14:02:39.295	2026-06-16 14:28:09.275
-cmqgpo7f70035em6heqj3kquc	Ляззат	7 777 195 52 61	\N	\N	CHINESE	hsk 2	INDIVIDUAL	ACTIVE	\N	2026-06-08 00:00:00		\N	\N	\N	2026-06-16 14:02:09.427	2026-06-16 14:28:28.877
-cmqgpn7f30032em6hkca1jzz6	Амир	7 701 525 02 00	\N	\N	CHINESE	hsk 2	GROUP	ACTIVE	\N	2026-05-26 00:00:00		\N	\N	\N	2026-06-16 14:01:22.767	2026-06-16 14:28:49.449
-cmqgpmjvz002zem6h5kz3hfyj	Диас 	7 707 144 4263	\N	\N	CHINESE	hsk 2	GROUP	ACTIVE	\N	2026-05-20 00:00:00		\N	\N	\N	2026-06-16 14:00:52.271	2026-06-16 14:29:02.626
-cmqgpljtf002wem6hscrfsf82	Сабрина	7 776 136 3557	\N	\N	CHINESE	hsk 2	GROUP	ACTIVE	\N	2026-06-04 00:00:00		\N	\N	\N	2026-06-16 14:00:05.523	2026-06-16 14:29:25.262
-cmqgphhqm002oem6h45vaku0z	Ерсултан	7 707 271 5032	\N	\N	CHINESE	hsk 1	GROUP	ACTIVE	\N	2026-06-15 00:00:00		\N	\N	\N	2026-06-16 13:56:56.206	2026-06-16 14:29:41.096
-cmqgpgx7v002lem6hqolzav57	Ерден	7 708 210 8546	\N	\N	CHINESE	Hsk 1	GROUP	ACTIVE	\N	2026-06-12 00:00:00		\N	\N	\N	2026-06-16 13:56:29.612	2026-06-16 14:29:48.822
-cmqgpd43r0026em6hfdpt43hs	Арина	7 702 501 5367	\N	\N	CHINESE	hsk 2	GROUP	ACTIVE	\N	2026-06-08 00:00:00		\N	\N	\N	2026-06-16 13:53:31.911	2026-06-16 14:30:30.059
-cmqgpcfu90023em6h71ue8wvv	Диас	7 775 329 0755	\N	\N	CHINESE	hsk 2	GROUP	ACTIVE	\N	2026-05-29 00:00:00		\N	\N	\N	2026-06-16 13:53:00.466	2026-06-16 14:30:53.191
-cmqgp9zx20020em6hid49ybd1	Айгуль	+7 702 386 75 31	\N	\N	CHINESE	hsk 2	GROUP	ACTIVE	\N	2026-05-25 00:00:00		\N	\N	\N	2026-06-16 13:51:06.518	2026-06-16 14:31:08.458
-cmqgp8rjl001xem6h667m6wzy	Жанайым	+7 775 274 50 44	\N	\N	CHINESE	hsk 2	GROUP	ACTIVE	\N	2026-06-07 00:00:00		\N	\N	\N	2026-06-16 13:50:09.009	2026-06-16 14:31:23.795
-cmqgp795c001uem6h0vbardj1	Азиза	+7 778 932 25 26	\N	\N	CHINESE	hsk 2	GROUP	ACTIVE	\N	2026-05-20 00:00:00		\N	\N	\N	2026-06-16 13:48:58.513	2026-06-16 14:31:46.742
-cmqgp65st001rem6hfwwxe9xz	Молдир	+7 778 854 27 27	\N	\N	CHINESE	hsk 2	GROUP	ACTIVE	\N	2026-05-27 00:00:00		\N	\N	\N	2026-06-16 13:48:07.518	2026-06-16 14:31:59.721
-cmqgp52q0001oem6h7yc03xvr	Айсана	+7 775 755 08 02	\N	\N	CHINESE	hsk 2	GROUP	ACTIVE	\N	2026-05-27 00:00:00		\N	\N	\N	2026-06-16 13:47:16.872	2026-06-16 14:32:14.489
-cmqgp3nz3001lem6hwbewmxv1	Зауре	+7  702 164 93 33	\N	\N	CHINESE	hsk 2	GROUP	ACTIVE	\N	2026-05-27 00:00:00		\N	\N	\N	2026-06-16 13:46:11.103	2026-06-16 14:32:26.026
+cmqgphhqm002oem6h45vaku0z	Ерсултан	7 707 271 5032	\N	\N	CHINESE	HSK 1	GROUP	ACTIVE	\N	2026-06-15 00:00:00		\N	\N	\N	2026-06-16 13:56:56.206	2026-06-16 15:44:24.283
+cmqgpgx7v002lem6hqolzav57	Ерден	7 708 210 8546	\N	\N	CHINESE	HSK 1	GROUP	ACTIVE	\N	2026-06-12 00:00:00		\N	\N	\N	2026-06-16 13:56:29.612	2026-06-16 15:44:27.306
+cmqgpg4ac002iem6h6vsnr722	Хамитула	7 707 956 0410‬	\N	\N	CHINESE	HSK 1	GROUP	ACTIVE	\N	2026-06-12 00:00:00		\N	\N	\N	2026-06-16 13:55:52.116	2026-06-16 15:44:30.364
+cmqgpfi49002fem6hcdm74fr0	Акжан	7 747 127 6101	\N	\N	CHINESE	HSK 1	GROUP	ACTIVE	\N	2026-06-03 00:00:00		\N	\N	\N	2026-06-16 13:55:23.385	2026-06-16 15:44:35.429
+cmqgpe7e90029em6hhyy8po10	Дана	7 778 846 5915	\N	\N	CHINESE	HSK 1	GROUP	ACTIVE	\N	2026-06-03 00:00:00		\N	\N	\N	2026-06-16 13:54:22.833	2026-06-16 15:44:38.964
+cmqgpd43r0026em6hfdpt43hs	Арина	7 702 501 5367	\N	\N	CHINESE	HSK 2	GROUP	ACTIVE	\N	2026-06-08 00:00:00		\N	\N	\N	2026-06-16 13:53:31.911	2026-06-16 15:44:44.628
+cmqgpougu0038em6hhnvtk8yl	Айнура	7 705 551 10 28	\N	\N	CHINESE	HSK 1	INDIVIDUAL_ONLINE	ACTIVE	\N	2026-06-01 00:00:00		\N	\N	\N	2026-06-16 14:02:39.295	2026-06-16 15:43:51.282
+cmqgpo7f70035em6heqj3kquc	Ляззат	7 777 195 52 61	\N	\N	CHINESE	HSK 2	INDIVIDUAL	ACTIVE	\N	2026-06-08 00:00:00		\N	\N	\N	2026-06-16 14:02:09.427	2026-06-16 15:43:56.788
+cmqgp9zx20020em6hid49ybd1	Айгуль	+7 702 386 75 31	\N	\N	CHINESE	HSK 2	GROUP	ACTIVE	\N	2026-05-25 00:00:00		\N	\N	\N	2026-06-16 13:51:06.518	2026-06-16 15:45:07.681
+cmqgpn7f30032em6hkca1jzz6	Амир	7 701 525 02 00	\N	\N	CHINESE	HSK 2	GROUP	ACTIVE	\N	2026-05-26 00:00:00		\N	\N	\N	2026-06-16 14:01:22.767	2026-06-16 15:44:02.584
+cmqgpmjvz002zem6h5kz3hfyj	Диас 	7 707 144 4263	\N	\N	CHINESE	HSK 2	GROUP	ACTIVE	\N	2026-05-20 00:00:00		\N	\N	\N	2026-06-16 14:00:52.271	2026-06-16 15:44:05.676
+cmqgp8rjl001xem6h667m6wzy	Жанайым	+7 775 274 50 44	\N	\N	CHINESE	HSK 2	GROUP	ACTIVE	\N	2026-06-07 00:00:00		\N	\N	\N	2026-06-16 13:50:09.009	2026-06-16 15:45:10.657
+cmqgpljtf002wem6hscrfsf82	Сабрина	7 776 136 3557	\N	\N	CHINESE	HSK 2	GROUP	ACTIVE	\N	2026-06-04 00:00:00		\N	\N	\N	2026-06-16 14:00:05.523	2026-06-16 15:44:15.268
+cmqgpjza2002rem6hw93xdder	Мария	+ 7 701 670 01 03	\N	\N	CHINESE	HSK 1	GROUP	FROZEN	\N	\N	предоплата 5000	\N	\N	\N	2026-06-16 13:58:52.25	2026-06-16 15:44:19.1
+cmqgp795c001uem6h0vbardj1	Азиза	+7 778 932 25 26	\N	\N	CHINESE	HSK 2	GROUP	ACTIVE	\N	2026-05-20 00:00:00		\N	\N	\N	2026-06-16 13:48:58.513	2026-06-16 15:45:13.678
+cmqgp65st001rem6hfwwxe9xz	Молдир	+7 778 854 27 27	\N	\N	CHINESE	HSK 2	GROUP	ACTIVE	\N	2026-05-27 00:00:00		\N	\N	\N	2026-06-16 13:48:07.518	2026-06-16 15:45:18.393
+cmqgp52q0001oem6h7yc03xvr	Айсана	+7 775 755 08 02	\N	\N	CHINESE	HSK 2	GROUP	ACTIVE	\N	2026-05-27 00:00:00		\N	\N	\N	2026-06-16 13:47:16.872	2026-06-16 15:45:23.133
+cmqgp3nz3001lem6hwbewmxv1	Зауре	+7  702 164 93 33	\N	\N	CHINESE	HSK 2	GROUP	ACTIVE	\N	2026-05-27 00:00:00		\N	\N	\N	2026-06-16 13:46:11.103	2026-06-16 15:45:32.115
+cmqgpcfu90023em6h71ue8wvv	Диас 1	7 775 329 0755	\N	\N	CHINESE	HSK 2	GROUP	ACTIVE	\N	2026-05-29 00:00:00		\N	\N	\N	2026-06-16 13:53:00.466	2026-06-16 15:47:23.782
+cmqgppd2u003bem6hn3469snx	Алмаз	7 708 383 83 83‬	\N	\N	CHINESE	HSK 1	INDIVIDUAL	ACTIVE	\N	2026-06-08 00:00:00		\N	\N	\N	2026-06-16 14:03:03.415	2026-06-16 16:23:40.859
 \.
 
 
@@ -1076,8 +1158,8 @@ cmqgpty3k003jem6hgjc48puz	Зюляль		\N	Китайский язык, hsk 6	{C
 --
 
 COPY public."Transaction" (id, type, category, amount, date, comment, "documentUrl", "groupId", "teacherId", "studentId", "campaignId", "responsibleId", "createdById", "createdAt", "updatedAt") FROM stdin;
-cmqgqut0400abem6hdjnuo2m1	EXPENSE	SMM	120000.00	2026-06-16 14:35:16.947		\N	\N	\N	\N	\N	\N	\N	2026-06-16 14:35:16.948	2026-06-16 14:35:16.948
-cmqgqvb9000aeem6hunjz6xcu	EXPENSE	TARGETED_ADS	160000.00	2026-06-16 14:35:40.595		\N	\N	\N	\N	\N	\N	\N	2026-06-16 14:35:40.596	2026-06-16 14:35:40.596
+cmqgvh4vm00245t69ohirxcqy	EXPENSE	TARGETED_ADS	160000.00	2026-06-01 00:00:00	\N	\N	\N	\N	\N	\N	\N	\N	2026-06-16 16:44:37.234	2026-06-16 16:44:37.234
+cmqgvhliy00275t695sufbv5v	EXPENSE	SMM	120000.00	2026-06-01 00:00:00	\N	\N	\N	\N	\N	\N	\N	\N	2026-06-16 16:44:58.81	2026-06-16 16:44:58.81
 \.
 
 
@@ -1093,7 +1175,7 @@ cmqgb32ps0004awwxykcsx30z	sales@hanbridge.kz	$2a$10$w.A8Xy3lWQZQaw80H1bwmuG33ytV
 cmqgb32q60008awwxlkyoejhj	marzhan@hanbridge.kz	$2a$10$w.A8Xy3lWQZQaw80H1bwmuG33ytV42veJjWgxP79McQ6UjyPO0mDq	Маржан	\N	TEACHER	t	\N	2026-06-16 07:13:48.942	2026-06-16 07:13:48.942
 cmqgb32qd000bawwx53ekanuo	yelnur@hanbridge.kz	$2a$10$w.A8Xy3lWQZQaw80H1bwmuG33ytV42veJjWgxP79McQ6UjyPO0mDq	Елнур	\N	TEACHER	t	\N	2026-06-16 07:13:48.95	2026-06-16 07:13:48.95
 cmqgb32qj000eawwxpujandkz	zyulyal@hanbridge.kz	$2a$10$w.A8Xy3lWQZQaw80H1bwmuG33ytV42veJjWgxP79McQ6UjyPO0mDq	Зюляль	\N	TEACHER	t	\N	2026-06-16 07:13:48.955	2026-06-16 07:13:48.955
-cmqgb32pi0001awwx61vqjxn4	director@hanbridge.kz	$2a$10$w.A8Xy3lWQZQaw80H1bwmuG33ytV42veJjWgxP79McQ6UjyPO0mDq	Директор Школы	\N	DIRECTOR	t	2026-06-16 13:32:56.81	2026-06-16 07:13:48.919	2026-06-16 13:32:56.811
+cmqgb32pi0001awwx61vqjxn4	director@hanbridge.kz	$2a$10$w.A8Xy3lWQZQaw80H1bwmuG33ytV42veJjWgxP79McQ6UjyPO0mDq	Директор Школы	\N	DIRECTOR	t	2026-06-16 16:34:02.284	2026-06-16 07:13:48.919	2026-06-16 16:34:02.285
 \.
 
 
@@ -1735,5 +1817,5 @@ ALTER TABLE ONLY public."Transaction"
 -- PostgreSQL database dump complete
 --
 
-\unrestrict qHpfrfAMiCAgMJVWJr9G8fPqIcYue937RKB1JYKhuN8NRyho9bNjXhkgSDwYK5s
+\unrestrict r8SEWlbEJ8qbVsu2Dr5ftdVB453VTH1A2MhvyjHGGzlndWrqj5SF6tegUiiaLQW
 

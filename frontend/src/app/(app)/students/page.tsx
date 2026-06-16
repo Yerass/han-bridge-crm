@@ -24,6 +24,12 @@ const STATUS: Record<string, { label: string; tone: any }> = {
 };
 const LANG: Record<string, string> = { CHINESE: '🇨🇳 Китайский', ENGLISH: '🇬🇧 Английский' };
 
+// Уровни зависят от языка
+const LEVELS: Record<string, string[]> = {
+  CHINESE: ['HSK 1', 'HSK 2', 'HSK 3', 'HSK 4', 'HSK 5', 'HSK 6'],
+  ENGLISH: ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'],
+};
+
 const EMPTY = {
   fullName: '',
   phone: '',
@@ -114,6 +120,12 @@ export default function StudentsPage() {
   }
 
   const set = (k: string) => (e: any) => setForm((f: any) => ({ ...f, [k]: e.target.value }));
+
+  // при смене языка сбрасываем уровень, если он не подходит новому языку
+  const setLanguage = (e: any) => {
+    const language = e.target.value;
+    setForm((f: any) => ({ ...f, language, level: LEVELS[language]?.includes(f.level) ? f.level : '' }));
+  };
 
   return (
     <div className="space-y-5">
@@ -212,13 +224,23 @@ export default function StudentsPage() {
             <Input value={form.phone} onChange={set('phone')} placeholder="+7 ..." />
           </Field>
           <Field label="Язык">
-            <Select value={form.language} onChange={set('language')}>
+            <Select value={form.language} onChange={setLanguage}>
               <option value="CHINESE">Китайский</option>
               <option value="ENGLISH">Английский</option>
             </Select>
           </Field>
           <Field label="Уровень">
-            <Input value={form.level} onChange={set('level')} placeholder="HSK2 / B1" />
+            <Select value={form.level} onChange={set('level')}>
+              <option value="">— не указан —</option>
+              {LEVELS[form.language]?.map((lvl) => (
+                <option key={lvl} value={lvl}>
+                  {lvl}
+                </option>
+              ))}
+              {form.level && !LEVELS[form.language]?.includes(form.level) && (
+                <option value={form.level}>{form.level} (старое)</option>
+              )}
+            </Select>
           </Field>
           <Field label="Тип обучения">
             <Select value={form.studyType} onChange={set('studyType')}>

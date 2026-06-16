@@ -1,4 +1,4 @@
-import { Controller, Get, Param, Post, Query, UseGuards } from '@nestjs/common';
+import { Controller, Get, Param, Post, UseGuards } from '@nestjs/common';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 import { Role } from '@prisma/client';
 import { NotificationsService } from './notifications.service';
@@ -14,8 +14,8 @@ export class NotificationsController {
   constructor(private readonly service: NotificationsService) {}
 
   @Get('payment-reminders')
-  reminders(@Query('days') days?: string) {
-    return this.service.paymentReminders(days ? Number(days) : 7);
+  reminders() {
+    return this.service.paymentReminders();
   }
 
   @Get()

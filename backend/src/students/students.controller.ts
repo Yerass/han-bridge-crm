@@ -18,6 +18,13 @@ export class StudentsController {
     return this.service.findAll(q);
   }
 
+  // свободные студенты (не состоят ни в одной активной группе) — для формы группы.
+  // ВАЖНО: объявлено до ':id', иначе 'available' попадёт в параметр id.
+  @Get('available')
+  findAvailable() {
+    return this.service.findAvailable();
+  }
+
   @Get(':id')
   findOne(@Param('id') id: string) {
     return this.service.findOne(id);

@@ -150,11 +150,11 @@ export default function DashboardPage() {
         </Card>
       </div>
 
-      {/* Payment reminders */}
+      {/* Payment reminders — пакет 12 занятий, остаток по расписанию */}
       <Card>
         <CardHeader className="flex-row items-center justify-between">
           <CardTitle className="flex items-center gap-2">
-            <BellRing className="h-5 w-5 text-primary" /> Напоминания об оплате (≤ 7 дней): {kpis.upcomingPayments ?? 0}
+            <BellRing className="h-5 w-5 text-primary" /> Пакеты на исходе (осталось ≤ 1): {kpis.upcomingPayments ?? 0}
           </CardTitle>
           <Link href="/notifications" className="text-sm font-medium text-primary hover:underline">
             Все →
@@ -162,18 +162,16 @@ export default function DashboardPage() {
         </CardHeader>
         <CardContent>
           {paymentReminders.length === 0 ? (
-            <p className="text-sm text-muted-foreground">Нет оплат в ближайшие 7 дней</p>
+            <p className="text-sm text-muted-foreground">Нет студентов с остатком 1 или 0 занятий</p>
           ) : (
             <ul className="divide-y divide-border">
               {paymentReminders.map((r: any) => (
                 <li key={r.studentId} className="flex items-center justify-between py-2 text-sm">
                   <span className="font-medium">{r.fullName}</span>
                   <span className="flex items-center gap-3 text-muted-foreground">
-                    <span>{formatKZT(r.amount)}</span>
-                    <span>{formatDate(r.nextDue)}</span>
-                    <span className={r.daysLeft < 0 ? 'font-medium text-red-600' : 'text-amber-600'}>
-                      {r.daysLeft < 0 ? `просрочено ${Math.abs(r.daysLeft)} дн.` : r.daysLeft === 0 ? 'сегодня' : `через ${r.daysLeft} дн.`}
-                    </span>
+                    <span>осталось {r.remaining} из 12</span>
+                    {r.nextLesson && <span>след. {formatDate(r.nextLesson)}</span>}
+                    <span className={r.remaining === 0 ? 'font-medium text-red-600' : 'text-amber-600'}>{r.statusLabel}</span>
                   </span>
                 </li>
               ))}

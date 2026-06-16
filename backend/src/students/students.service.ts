@@ -61,6 +61,15 @@ export class StudentsService {
     return { ...student, attendanceStats };
   }
 
+  /** Свободные студенты: без активного зачисления ни в одну группу. */
+  findAvailable() {
+    return this.prisma.student.findMany({
+      where: { enrollments: { none: { isActive: true } } },
+      orderBy: { fullName: 'asc' },
+      select: { id: true, fullName: true, language: true, level: true, studyType: true, status: true },
+    });
+  }
+
   create(dto: CreateStudentDto) {
     return this.prisma.student.create({ data: this.toData(dto) });
   }

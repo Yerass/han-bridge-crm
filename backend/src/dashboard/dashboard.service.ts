@@ -44,8 +44,8 @@ export class DashboardService {
     const topTeacher = [...teacherList].sort((a, b) => b.profit - a.profit)[0] ?? null;
     const overdueStudents = new Set(overdueRows.map((p) => p.studentId)).size;
 
-    // напоминания об оплате (следующая оплата в ближайшие 7 дней или просрочена)
-    const paymentReminders = await this.notifications.paymentReminders(7);
+    // напоминания об оплате (пакет 12 занятий: осталось ≤ 1 по недельной сетке)
+    const paymentReminders = await this.notifications.paymentReminders();
 
     return {
       kpis: {
