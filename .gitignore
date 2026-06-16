@@ -1,0 +1,27 @@
+# dependencies
+node_modules/
+**/node_modules/
+
+# env
+.env
+*.local
+
+# build output
+dist/
+build/
+.next/
+out/
+
+# logs
+*.log
+npm-debug.log*
+
+# prisma
+backend/prisma/*.db
+
+# misc
+.DS_Store
+coverage/
+backups/*.sql
+backups/*.gz
+*.tsbuildinfo
