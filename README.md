@@ -58,18 +58,6 @@ npm run dev                          # http://localhost:3000
 
 ---
 
-## 🔑 Демо-доступы
-
-После `prisma db seed` (пароль у всех — ``):
-
-| Роль          | Email                     |
-| ------------- | ------------------------- |
-| Super Admin   | admin@hanbridge.kz        |
-| Директор      | director@hanbridge.kz     |
-| Администратор | manager@hanbridge.kz      |
-| Бухгалтер     | accountant@hanbridge.kz   |
-| Менеджер      | sales@hanbridge.kz        |
-| Преподаватели | marzhan@ / yelnur@ / zyulyal@hanbridge.kz |
 
 ---
 
