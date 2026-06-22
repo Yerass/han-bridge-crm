@@ -19,5 +19,10 @@ COPY --from=builder /app/public ./public
 COPY --from=builder /app/.next/standalone ./
 COPY --from=builder /app/.next/static ./.next/static
 
+# Run as non-root (node user, uid 1000) — least privilege.
+# ISR cache (.next/cache) must be writable by the runtime user.
+RUN mkdir -p .next/cache && chown -R node:node /app
+USER node
+
 EXPOSE 3000
 CMD ["node", "server.js"]

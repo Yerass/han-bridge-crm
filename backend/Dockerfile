@@ -29,6 +29,11 @@ COPY --from=builder /app/tsconfig.json ./tsconfig.json
 # src is needed because `prisma db seed` (ts-node) imports shared seed logic from src/
 COPY --from=builder /app/src ./src
 
+# Run as non-root (node user, uid 1000) — least privilege.
+# node owns /app so `prisma migrate deploy` and npm cache work at runtime.
+RUN chown -R node:node /app
+USER node
+
 EXPOSE 4000
 
 # Apply migrations then start. (prisma is available via npx)
